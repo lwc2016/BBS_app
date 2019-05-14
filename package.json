@@ -1,0 +1,28 @@
+{
+  "name": "BBS_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jsonwebtoken": "8.5.1",
+    "koa": "2.7.0",
+    "koa-bodyparser": "4.2.1",
+    "koa-jwt": "3.5.1",
+    "koa-router": "7.4.0",
+    "lodash": "4.17.11",
+    "mongoose": "5.5.6",
+    "nconf": "0.10.0",
+    "sha1": "1.1.1",
+    "standard-validator": "1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "1.19.0"
+  }
+}
