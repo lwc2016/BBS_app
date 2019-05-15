@@ -1,0 +1,10 @@
+.register{
+    margin: 0 auto;
+    margin-top: 80px;
+    width: 380px;
+    padding: 15px;
+    border-radius: 4px;
+}
+.register .title{
+    padding-bottom: 5px;
+}
