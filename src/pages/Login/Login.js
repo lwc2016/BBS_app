@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./Login.css";
+import style from "./Login.css";
 
 export default class Login extends Component{
 	constructor(props){
@@ -7,7 +7,7 @@ export default class Login extends Component{
 	}
 	render(){
 		return(
-			<div className="login jumbotron">
+			<div className={style["login"] + " jumbotron"}>
 				<h4 className="title">登录</h4>
 				<form>
 					<div className="form-group">

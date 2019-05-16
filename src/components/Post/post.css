@@ -1,0 +1,26 @@
+.post{
+    padding: 10px;
+    background-color: #ffffff;
+}
+.post + .post{
+    border-top: 1px solid #e5e5e5;
+}
+.avatar{
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 100%;
+    border: 1px solid #e5e5e5;
+}
+.avatar img{
+    width: 100%;
+}
+.link{
+    margin-left: 10px;
+}
+.post-bottom{
+    margin-top: 10px;
+}
+.span{
+    margin-right: 20px;
+}

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Post from "../../components/Post/Post.js";
 
 export default class PostList extends Component{
     constructor(props){
@@ -6,7 +7,10 @@ export default class PostList extends Component{
     }
     render(){
         return(
-            <div>首页</div>
+            <div>
+                <Post></Post>
+                <Post></Post>
+            </div>
         )
     }
 }

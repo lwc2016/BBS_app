@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./content.css";
+import style from "./content.css";
 
 export default class Content extends Component{
     constructor(props){
@@ -7,7 +7,7 @@ export default class Content extends Component{
     }
     render(){
         return(
-            <div className="container content">
+            <div className={style["content"] + " container"}>
                 {this.props.children}
             </div>
         )
