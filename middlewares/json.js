@@ -3,7 +3,7 @@ module.exports = ()=>{
         // 成功返回
         const success = function(data){
             this.body = {
-                code: "0",
+                code: 0,
                 result: data || ""
             };
         };
@@ -11,7 +11,7 @@ module.exports = ()=>{
         // 参数错误
         const paramError = function(errorMsg){
             this.body = {
-                code: "1001",
+                code: 1001,
                 errorMsg: errorMsg || "参数错误"
             }
         };
@@ -19,7 +19,7 @@ module.exports = ()=>{
         // 未授权
         const notAuth = function(){
             this.body = {
-                code: "1002",
+                code: 1002,
                 errorMsg: "请重新登录"
             }
         };
@@ -28,7 +28,7 @@ module.exports = ()=>{
         const error = function(errorMsg){
             console.log(errorMsg);
             this.body = {
-                code: "1003",
+                code: 1003,
                 errorMsg: errorMsg
             }
         };

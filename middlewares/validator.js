@@ -15,7 +15,12 @@ module.exports = (rules)=>{
             await next();
         }else{
             console.log(validator.errors);
-            ctx.paramError(validator.errors)
+            let errors = {};
+            for(let key in validator.errors){
+                errors[key] = validator.errors[key][0];
+            }
+
+            ctx.paramError(errors)
         }
     };
     return outer;

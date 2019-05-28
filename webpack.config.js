@@ -5,7 +5,8 @@ module.exports = {
 	entry: "./src/index.js",
 	output: {
 		path: baseDir,
-		filename: "bundle.js"
+		filename: "js/bundle.js",
+		publicPath: "/"
 	},
 	module: {
 		rules: [
@@ -31,6 +32,10 @@ module.exports = {
 			"/register": {
 				target: "http://localhost:60801",
 				pathRewrite: {"^/register": ""}
+			},
+			"/post/1": {
+				target: "http://localhost:60801",
+				pathRewrite: {"^/post/1": ""}
 			}
 		}
 	},
