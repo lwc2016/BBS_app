@@ -3,4 +3,30 @@
     text-align: center;
     display: flex;
     justify-content: center;
+    font-size: 0;
+}
+.container li a{
+    font-size: 16px;
+}
+.container li a:focus{
+    border: none!important;
+    outline: none!important;
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+}
+.dot-container{
+    display: inline-block;
+    padding: 0 10px;
+}
+.dot{
+    font-size: 20px;
+    vertical-align: middle;
+    line-height: 18px;
+}
+.arrow-icon{
+    margin-top: 7px;
+    width: 20px;
+    height: 20px;
+    vertical-align: center;
+    cursor: pointer;
 }
